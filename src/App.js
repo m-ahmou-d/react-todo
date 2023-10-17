@@ -2,32 +2,32 @@ import React from 'react';
 
 const todoList = [
   {
-    id: 1,
+    itemID: 1,
     title: 'Complete Assignment',
     type: 'School Work'
   },
   {
-    id: 2,
+    itemID: 2,
     title: 'Go to the Gym',
     type: 'Personal'
   },
   {
-    id: 3,
+    iitemID: 3,
     title: 'Work 10 Hours',
     type: 'Work'
   },
   {
-    id: 4,
+    itemID: 4,
     title: 'Do Laundry',
     type: 'Personal'
   },
   {
-    id: 5,
+    itemID: 5,
     title: 'Groceries',
     type: 'Errands'
   },
   {
-    id: 6,
+    itemID: 6,
     title: 'Get an Oil Change',
     type: 'Errands'
   },
@@ -38,7 +38,7 @@ function App() {
     <div>
       <h1>Todo List</h1>
       <ul>{todoList.map(function(item) {
-        return <li>{item.id + ': ' + item.title + ' - ' + item.type}</li>
+        return <li key="itemID">{item.itemID + ': ' + item.title + ' - ' + item.type}</li>
       })}
       </ul>
     </div>
