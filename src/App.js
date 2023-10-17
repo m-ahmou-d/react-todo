@@ -12,7 +12,7 @@ const todoList = [
     type: 'Personal'
   },
   {
-    iitemID: 3,
+    itemID: 3,
     title: 'Work 10 Hours',
     type: 'Work'
   },
@@ -38,7 +38,7 @@ function App() {
     <div>
       <h1>Todo List</h1>
       <ul>{todoList.map(function(item) {
-        return <li key="itemID">{item.itemID + ': ' + item.title + ' - ' + item.type}</li>
+        return <li key = {item.itemID} > {item.itemID + ': ' + item.title + ' - ' + item.type}</li>
       })}
       </ul>
     </div>
